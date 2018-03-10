@@ -28,8 +28,8 @@ My project includes the following files:
 * drive.py for driving the car in autonomous mode
 * model.h5 containing a trained convolution neural network 
 * readme.md explains the structure of your network and training approach
-* images support images for readme
-* run1.mp4 result of code
+* images for readme
+* run1.mp4 shows the result
 
 #### 2. Submission includes functional code
 Using the Udacity provided simulator and my drive.py file, the car can be driven autonomously around the track by executing 
@@ -55,7 +55,7 @@ The model was trained and validated on separated data sets to ensure that the mo
 
 The model used an adam optimizer and the learning rate was set to 0.0001.  
    
- ![alt text](https://github.com/inokatsu/CarND-Behavior-Cloning/blob/master/images/nvidia_network.png, "NVIDIA network")        
+ ![alt text](https://github.com/inokatsu/CarND-Behavior-Cloning/blob/master/images/nvidia_network.png)        
 Fig1 : NVIDIA network
 
 The model looks like follows:
