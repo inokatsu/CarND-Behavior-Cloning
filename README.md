@@ -13,15 +13,6 @@ The goals / steps of this project are the following:
 * Summarize the results with a written report
 
 
-[//]: # (Image References)
-
-[image1]: ./examples/placeholder.png "Model Visualization"
-[image2]: ./examples/placeholder.png "Grayscaling"
-[image3]: ./examples/placeholder_small.png "Recovery Image"
-[image4]: ./examples/placeholder_small.png "Recovery Image"
-[image5]: ./examples/placeholder_small.png "Recovery Image"
-[image6]: ./examples/placeholder_small.png "Normal Image"
-[image7]: ./examples/placeholder_small.png "Flipped Image"
 
 
 ## Rubric Points
@@ -64,7 +55,8 @@ The model was trained and validated on separated data sets to ensure that the mo
 
 The model used an adam optimizer and the learning rate was set to 0.0001.  
    
-     
+ ![alt text](https://github.com/inokatsu/CarND-Behavior-Cloning/blob/master/images/nvidia_network.png, "NVIDIA network")        
+Fig1 : NVIDIA network
 
 The model looks like follows:
     
@@ -113,12 +105,12 @@ Non-trainable params: 0
 Udacity provided us the sample data which cointains 8037 images. The steering data of Udacity provided have mainly distributed on the small steering angle and it will cause poor performance. Therefore, I cut off the 99% of data where the value of steering is 0.0 angle and 80% of the data where the absolute value of steering within 0.1.
 
 
-![alt text][image6]  
-Fig  : The original data distribution
+![alt text](https://github.com/inokatsu/CarND-Behavior-Cloning/blob/master/images/hist_sample.png)  
+Fig2 : The original data distribution
 
 
-![alt text][image7]  
-Fig : The steering data distribution after cutting off
+![alt text](https://github.com/inokatsu/CarND-Behavior-Cloning/blob/master/images/hist_sample_cut.png) 
+Fig3 : The steering data distribution after cutting off
 
 Then, following preprocessing has done.
 
@@ -144,6 +136,6 @@ I finally randomly shuffled the data set and put 20% of the data into a validati
 I used this training data for training the model. The validation set helped determine if the model was over or under fitting. The ideal number of epochs was 3 which is set experimentally. I tried the large number of epochs and it helped to lowering the loss, but it didn't lead to a good performance.
 
 ## Result
-The result of this project is [here](link).  
-![alt text]()
+The result of this project is [here](https://youtu.be/yQKU0eNSMng).  
+[![alt text](https://github.com/inokatsu/CarND-Behavior-Cloning/blob/master/images/Track_1_screenshot.png)](https://youtu.be/yQKU0eNSMng)
 
