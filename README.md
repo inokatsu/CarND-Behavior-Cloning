@@ -1,6 +1,8 @@
 # **Behavioral Cloning** 
 Use Convolutional Neural Network to clone driving behavior
 
+![nvidia_network][image1]  
+
 ---
 
 **Behavioral Cloning Project**
@@ -13,10 +15,14 @@ The goals / steps of this project are the following:
 * Summarize the results with a written report
 
 
+[//]: # (Image References)
 
+[image1]: ./images/Track1.gif "Track1.gif"
+[image2]: ./images/nvidia_network.png "nvidia_network"
+[image3]: ./images/hist_sample.png "hist_sample"
+[image4]: ./images/hist_sample_cut.png "hist_sample_cut"
+[image5]: ./images/Track_1_screenshot.png "hist_sample_cut"
 
-## Rubric Points
-Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/432/view) individually and describe how I addressed each point in my implementation.  
 
 ---
 ### Files Submitted & Code Quality
@@ -55,7 +61,7 @@ The model was trained and validated on separated data sets to ensure that the mo
 
 The model used an adam optimizer and the learning rate was set to 0.0001.  
    
- ![alt text](https://github.com/inokatsu/CarND-Behavior-Cloning/blob/master/images/nvidia_network.png)        
+![nvidia_network][image2]   
 Fig1 : NVIDIA network
 
 The model looks like follows:
@@ -104,12 +110,10 @@ Non-trainable params: 0
 
 Udacity provided us the sample data which cointains 8037 images. The steering data of Udacity provided have mainly distributed on the small steering angle and it will cause poor performance. Therefore, I cut off the 99% of data where the value of steering is 0.0 angle and 80% of the data where the absolute value of steering within 0.1.
 
-
-![alt text](https://github.com/inokatsu/CarND-Behavior-Cloning/blob/master/images/hist_sample.png)  
+![hist_sample][image3] 
 Fig2 : The original data distribution
 
-
-![alt text](https://github.com/inokatsu/CarND-Behavior-Cloning/blob/master/images/hist_sample_cut.png) 
+![hist_sample_cut][image4] 
 Fig3 : The steering data distribution after cutting off
 
 Then, following preprocessing has done.
@@ -137,5 +141,5 @@ I used this training data for training the model. The validation set helped dete
 
 ## Result
 The result of this project is [here](https://youtu.be/yQKU0eNSMng).  
-[![alt text](https://github.com/inokatsu/CarND-Behavior-Cloning/blob/master/images/Track_1_screenshot.png)](https://youtu.be/yQKU0eNSMng)
+[![hist_sample_cut][image5] ](https://youtu.be/yQKU0eNSMng)
 
